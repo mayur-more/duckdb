@@ -24,8 +24,8 @@ public class tracesQueryTest {
         stmt.execute("INSTALL httpfs;");
         stmt.execute("LOAD httpfs;");
         stmt.execute("SET s3_region='us-west-2';");
-        stmt.execute("SET s3_access_key_id='AKIASFKBB3MBQGMZNEL6';");
-        stmt.execute("SET s3_secret_access_key='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';");
+        stmt.execute("SET s3_access_key_id='********';");
+        stmt.execute("SET s3_secret_access_key='***********';");
 
 
         String[] queries = {"SELECT startTime,error FROM read_parquet('"+ file +"') ORDER BY startTime DESC",
